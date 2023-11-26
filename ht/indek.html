@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style>
+*{
+    margin:0; 
+    padding:0; 
+	box-sizing:border-box;
+}
+.row {
+    display:flex;
+}
+.box-1,.box-2 {
+    flex:1; height:40px;
+}
+.box-1 {
+    background-color: Red;
+}
+.box-2 {
+    background-color: rgb(0, 0, 0);
+}
+.google{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 120px;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    height: 700px;
+    width: 1480px;
+    padding: 20px 35px;
+    background: rgb(80, 80, 80);
+    border-radius: 45px;
+    border: 6px solid rgba( 255, 255, 255, 0.18 );
+    margin: 10px;
+}
+.card h2{
+    text-align: center;
+    border: solid gray;
+    background-color: gray;
+    border-radius: 45px;
+    margin-top: 20px;
+    margin-left: 520px;
+    margin-right: 520px;
+    font-size: 28px;
+}
+.cookies{
+    border: 5px;
+    border-style: double;
+    border-color: red;
+    border-radius: 5px;
+    margin-left: 310px;
+    margin-right: 260px;
+}
+.card .cookies h3{
+    color: rgb(178, 178, 178);
+    font-size: 18px;
+    padding-left: 0px;
+    
+}
+.card .subs h3{
+    color: rgb(178, 178, 178);
+    margin-left: 330px;
+    margin-top: 15px;
+    font-size: 18px;
+}
+.card .subs2 h3{
+    color: rgb(178, 178, 178);
+    margin-left: 28px;
+    margin-top: 15px;
+    font-size: 18px;
+}
+.card h4{
+    text-align:start;
+color: rgb(178, 178, 178);
+    margin-left: 320px;
+    margin-top: 15px;
+    font-size: 18px;
+}
+.card a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 18px;
+    color: rgb(50, 50, 126);
+}
+.img{
+    height: 150x;
+    width: 160px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 115px;
+}
+.subs {
+    display: inline-block;
+    flex-basis: 0px;
+    flex-grow: 1;
+    flex-shrink: 0;
+
+}
+.subs2 {
+    display: inline-block;
+    flex-basis: 0px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    
+}
+#subs-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+li {
+    display: list-item;
+    list-style-type: none;
+    
+}
+ul {
+    display: block;
+    padding-left: 40px;
+    
+}
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+	</style>
+</head>
+<body>
+	<div class="row">
+		<div class="box-1"></div>
+		<div class="box-2"></div>
+	</div>
+
+    <div class="google">
+        <img class="logo" src="gog.png">
+    </div>
+
+    <div class="box">
+        <div class="card"> 
+            <img class="img" src="incog.png">
+            <h2>You've gone incognito</h2>
+            <h4>Now you can browse privately, and other people who use this device won't see your activity.</h4>
+            <h4>However, downloads and bookmarks will be saved.<a href="https://support.google.com/chrome/answer/7440301?hl=en&co=GENIE.Platform%3DAndroid#:~:text=When%20you%20browse%20privately%2C%20other,when%20you%20exit%20Incognito%20mode." target="_blank">Learn more.</a></h4>
+            
+            <div id="subs-wrapper">
+            <div class="subs">
+                <h3>Chrome won’t save the following information: </h3>
+                <ul>
+                    <li>
+                        <h3>&#9679; Your browsing history</h3>
+                    </li>
+                    <li>
+                        <h3>&#9679; Cookies and site data</h3>
+                    </li>
+                    <li>
+                        <h3>&#9679; Information entered in forms</h3>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="subs2">
+                <h3>Your activity might still be visible to: </h3>
+                <ul>
+                    <li>
+                        <h3>&#9679; Websites you visit</h3>
+                    </li>
+                    <li>
+                        <h3>&#9679; Your employer or school</h3>
+                    </li>
+                    <li>
+                        <h3>&#9679; Your internet service provider</h3>
+                    </li>
+                </ul>
+            </div>
+            </div>
+
+            <div class="cookies">
+                <h3>Block third-party cookies</h3>
+                <h3>When on, sites can't use cookies that track you across the web. Features on some sites may break.</h3>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
+

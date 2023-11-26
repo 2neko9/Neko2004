@@ -1,0 +1,218 @@
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.con{
+    height: 35px;
+    width: 30x;
+}
+.logo{
+    height: 283px;
+    width: 275px;
+}
+body{
+    background-image: url(https://w0.peakpx.com/wallpaper/146/884/HD-wallpaper-coffee-drinks-cup-drink-white-coffee-beans-cups.jpg);
+    background-size: cover;
+    background-position: center;
+    transition-timing-function: ease-in-out;
+    transition: 2s;
+}
+nav span{
+    color: red;
+}
+.title{
+    font-size: 58px;
+    padding-right: 135px;
+}
+h2{
+    padding-left: 30%;
+    color: brown;
+    font-size: 45px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.home{
+    font-size: 40px;
+    padding-top: 90px;
+    padding-right: 55%;
+    text-align: center;
+    animation: transitionIn 0.75s;
+}
+nav{
+    margin-right: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 5%;
+}
+nav ul li{
+    display:inline-block;
+    list-style-type: none;
+    padding: 14px 28px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: semi-bold;
+}
+nav ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 29px;
+    color:red;
+}
+nav ul li a:hover{
+    color: rgba(3,53,44,255); 
+    transition: 0.5s;
+}
+.contacts{
+    animation: transitionIn 0.75s;
+}
+.contacts ul li{
+    display:inline-block;
+    list-style-type: none;
+    margin-top: 100px;
+    padding: 14px 28px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: semi-bold;
+}
+.contacts ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    
+    font-size: 38px;
+    color:red;
+}
+.contacts ul li a:hover{
+    color: rgba(3,53,44,255); 
+    transition: 0.5s;
+}
+.Best{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;   
+    margin-top: 90px;
+    animation: transitionIn 0.75s;
+}
+.Best h2{
+    padding-left: 25px;
+    color: brown;
+    font-size: 45px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.menu{
+    position: sticky;
+    margin-right: 59%;
+    margin-left: 45px;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(193,193,193,255);
+    border-radius: 32px;
+    z-index: 1;
+}
+.menu ul li{
+    display:inline-block;
+    list-style-type: none;
+    padding: 14px 28px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: semi-bold;
+}
+.menu ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 29px;
+    color:red;
+}
+.menu ul li a:hover{
+    color: rgba(3,53,44,255); 
+    transition: 0.5s;
+}
+.cofs{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;   
+    margin-top: 90px;
+    animation: transitionIn 0.75s;
+}
+.card{
+    height: 425px;
+    width: 335px;
+    padding: 20px 35px;
+    background: rgb(73, 10, 10);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0.5px );
+    -webkit-backdrop-filter: blur( 0.5px );
+    border-radius: 45px;
+    border: 6px solid rgba( 255, 255, 255, 0.18 );
+    margin: 10px;
+    margin-left: 18px;
+}
+.card h4{
+    color: crimson;
+    font-size: 28px;
+    text-align: center;
+}
+.img{
+    height: 220x;
+    width: 218px;
+    margin-left: 50px;
+    border-style: groove;
+    border-radius: 27px;
+    border-width: 5px;
+}
+.card .button{
+    margin-left: 80px;
+    padding-left: 90%;
+    padding-right: 10px;
+    align-items: center;
+    background-color: rgba(3,53,44,255);
+    border: 2px solid #210303;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 50%;
+    padding: 0px 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+.card .button::after{
+    background-color: #210303;
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 48px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 8px);
+    transition: transform .2s ease-out;
+    z-index: -1;
+}
+.card .button:hover::after{
+    transform: translate(0, 0);
+}
+.card .button:active {
+    background-color: #210303;
+    outline: 0;
+    transition: .1s;
+}
+.card .button:hover {
+    outline: 0;
+}

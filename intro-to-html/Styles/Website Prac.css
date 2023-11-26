@@ -1,0 +1,274 @@
+.body{
+    background-color: rgb(217, 19, 19);
+}
+.video-preview{
+    width: 300px;
+}
+.me{
+    height: 100vh;
+    width: 100%;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 14%, rgba(0,0,0,1) 74%, rgba(0,56,68,1) 100%);
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-left: 8%;
+    padding-right: 8%;
+    background: rgba( 255, 34, 34, 0.4 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 0px );
+    border-radius: 45px;
+    border: 5px solid rgba( 255, 255, 255, 0.18 );
+}
+.logo{
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+span{
+    color: rgb(249, 0, 50);
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+nav ul li a{
+    color:rgb(234, 234, 234);
+    text-decoration: none;
+    text-transform: capitalize;
+}
+nav ul li a:hover{
+    color: #ff1900;
+    transition: .5s;
+}
+.btn{
+    align-items: center;
+    background-color: rgb(16, 52, 74);
+    border: 2px solid #ff0000;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 100%;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+.btn:after{
+    background-color: #ff0000;
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 48px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 8px);
+    transition: transform .2s ease-out;
+    z-index: -1;
+}
+.btn:hover:after{
+    transform: translate(0, 0);
+}
+.btn:active {
+    background-color: #ff1900;
+    outline: 0;
+    transition: .1s;
+}
+.btn:hover {
+    outline: 0;
+}
+@media (min-width: 768px) {
+.btn{
+    padding: 0 40px;
+}
+}
+.Home{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+h1{
+    color: #ff1900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin: 20px 0px 20px;
+    font-size: 75px;
+}
+h3{
+    color:rgb(255, 255, 255);
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+h4{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    margin-top: 50px;
+}
+.about{
+    width: 100%;
+    padding: 100px 0px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 14%, rgba(0,0,0,1) 74%, rgba(0,56,68,1) 100%);
+}
+.about img{
+    height: auto;
+    width: 500px;
+    border-radius: 15px;
+}
+.about-text{
+    width: 750px;
+    background: rgb(73, 10, 10);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0.5px );
+    -webkit-backdrop-filter: blur( 0.5px );
+    border-radius: 10px;
+    border: 6px solid rgba( 255, 255, 255, 0.18 );
+    margin-left: 65px;
+}
+.main{
+    width: 1450px;
+    max-width: 98%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text h2{
+    color: #ffffff;
+    font-size: 75px;
+    text-transform: capitalize;
+    text-align: center;
+}
+.about-text h5{
+    color: #000000;
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.about-text p{
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+
+.projects{
+    width: 100%;
+    padding: 100px 0px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 14%, rgba(0,0,0,1) 74%, rgba(0,56,68,1) 100%);
+}
+.title h2{
+    color: #ffffff;
+    text-align: center;
+    font-size: 65px;
+    text-transform: capitalize;
+}
+.box{
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 400px;
+}
+.card{
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: rgb(73, 10, 10);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0.5px );
+    -webkit-backdrop-filter: blur( 0.5px );
+    border-radius: 45px;
+    border: 6px solid rgba( 255, 255, 255, 0.18 );
+    margin: 10px;
+}
+.card h5{
+    color: #ffffff;
+    text-align: center;
+    font-size: 25px;
+}
+.pra p{
+    text-align: center;
+    color: #ff0000;
+    padding-bottom: 20px;
+}
+.card i{
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: #ff0000;
+}
+.card .button{
+    align-items: center;
+    background-color: rgb(16, 52, 74);
+    border: 2px solid #ff0000;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 100%;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+.card .button::after{
+    background-color: #ff0000;
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 48px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 8px);
+    transition: transform .2s ease-out;
+    z-index: -1;
+}
+.card .button:hover::after{
+    transform: translate(0, 0);
+}
+.card .button:active {
+    background-color: #ff1900;
+    outline: 0;
+    transition: .1s;
+}
+.card .button:hover {
+    outline: 0;
+}
